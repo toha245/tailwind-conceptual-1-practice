@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Conceptual-1 Practice</title>
-    <link
-      rel="shortcut icon"
-      href="./images/business.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/logo-3.png" type="image/x-icon" />
 
     <!-- Tailwind first, then DaisyUI (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,8 +50,97 @@
         },
       };
     </script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="text-[#f8f8f8]">
+    <header class="bg-[#0e1134] px-3">
+      <!-- navbar start -->
+      <nav class="container mx-auto py-6">
+        <div class="flex justify-between items-center">
+          <div class="flex justify-center items-center space-x-6">
+            <div>
+              <img src="./assets/logo-3.png" alt="" />
+            </div>
+            <div class="space-x-6 text-lg font-semibold hidden lg:block">
+              <a class="hover:text-orange-600 duration-300" href="">Home</a>
+              <a class="hover:text-orange-600 duration-300" href="">About</a>
+              <a class="hover:text-orange-600 duration-300" href="">Services</a>
+              <a class="hover:text-orange-600 duration-300" href="">Blog</a>
+              <a class="hover:text-orange-600 duration-300" href="">Contact</a>
+            </div>
+          </div>
+          <div class="space-x-6 hidden lg:block">
+            <button class="text-lg font-semibold">Login</button>
+            <button class="text-lg font-semibold bg-orange-600 px-6 py-3 rounded-lg hover:bg-orange-500 duration-300">Get Started</button>
+          </div>
+          <div class="lg:hidden">
+            <img class="w-8 h-8" src="./assets/more.png" alt="">
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+    <!-- start mobile section -->
+        <section class="bg-[#12174e] pt-20 mb-72">
+          <div class="container px-8 lg:px-24 mx-auto my-auto">
+            <div>
+            <div class="flex flex-col justify-center items-center text-center">
+              <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight mb-8">Creative way to <br class="hidden lg:block"> Showcase your <span class="text-orange-700">App</span></h1>
+              <p class="text-lg mb-8 text-[#aeb2c1]">Your app gets maximum attention and gets more and more downloads.</p>
+              <!-- button part -->
+              <div class="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center items-center md:align-middle">
+                <button class="text-lg md:text-xl font-bold bg-orange-600 px-6 py-3 rounded-lg hover:bg-orange-500 duration-300">Get a Quote</button>
+                <button class="space-x-2 px-6"><i class="fa-solid fa-play py-[5px] pl-[2px]
+                  px-auto border rounded-full w-7 h-7"></i><span class=" text-lg md:text-xl font-bold">Play Video</button>
+              </div>
+              <!-- mobile image section -->
+              <div class="flex justify-center translate-y-16 md:translate-y-28 lg:translate-y-48">
+            <img class="w-3/4" src="./assets/hero-thumb-4.png" alt="">
+            </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <!-- last section -->
+         <section>
+          <div class="container mx-auto my-auto mb-40">
+            <!-- title part -->
+            <div class="flex flex-col justify-center items-center text-center mb-16">
+              <h1 class="text-4xl md:text-5xl font-bold text-[#4e4e4e] mb-5">What you can do</h1>
+              <p class="text-lg md:text-xl text-[#626262] w-2/3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem, delectus necessitatibus ut quod tenetur at facilis recusandae perspiciatis sunt, quam quas autem modi explicabo non voluptas minus id corrupti!</p>
+            </div>
+            <!-- card part -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-6 space-y-6 lg:space-y-0">
+              <!-- card 1 -->
+               <div class="text-[#5e5252] flex flex-col justify-center items-center text-center py-8 shadow shadow-[#e0dfdf]">
+                <div class="bg-green-500 w-12 h-12 rounded-full flex justify-center items-center mb-4"><img src="./assets/play-store.png" alt=""></div>
+                <h4 class="text-2xl font-bold mb-4">Easy To use</h4>
+                <p class="text-xl mb-4">Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit. Nisi, ad?</p>
+                <a href="">Read More</a>
+               </div>
+              <!-- card 2 -->
+               <div class="text-[#5e5252] flex flex-col justify-center items-center text-center py-8 shadow shadow-[#e0dfdf]">
+                <div class="bg-yellow-400 w-12 h-12 rounded-full flex justify-center items-center mb-4"><img src="./assets/play-store.png" alt=""></div>
+                <h4 class="text-2xl font-bold mb-4">Easy To use</h4>
+                <p class="text-xl mb-4">Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit. Nisi, ad?</p>
+                <a href="">Read More</a>
+               </div>
+              <!-- card 3 -->
+               <div class="text-[#5e5252] flex flex-col justify-center items-center text-center py-8 shadow shadow-[#e0dfdf]">
+                <div class="bg-blue-500 w-12 h-12 rounded-full flex justify-center items-center mb-4"><img src="./assets/play-store.png" alt=""></div>
+                <h4 class="text-2xl font-bold mb-4">Easy To use</h4>
+                <p class="text-xl mb-4">Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit. Nisi, ad?</p>
+                <a href="">Read More</a>
+               </div>
+              <!-- card 4 -->
+               <div class="text-[#5e5252] flex flex-col justify-center items-center text-center py-8 shadow shadow-[#e0dfdf]">
+                <div class="bg-red-500 w-12 h-12 rounded-full flex justify-center items-center mb-4"><img src="./assets/play-store.png" alt=""></div>
+                <h4 class="text-2xl font-bold mb-4">Easy To use</h4>
+                <p class="text-xl mb-4">Lorem ipsum dolor sit <br> amet consectetur <br> adipisicing elit. Nisi, ad?</p>
+                <a href="">Read More</a>
+               </div>
+             </div>
+          </div>
+         </section>
+  </body>
 </html>
